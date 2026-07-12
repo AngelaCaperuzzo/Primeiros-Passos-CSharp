@@ -1,0 +1,29 @@
+using System;
+
+namespace PrimeiroProjeto
+{
+    internal class Aula2
+    {
+        static void Main(String[] args)
+        {
+            int a = 10;
+            Console.WriteLine(a);
+
+            //atribuição acumulativa
+            a +=2;
+            Console.WriteLine(a);
+
+            a *= 3;
+            Console.WriteLine(a);
+
+            a -= 4;
+            Console.WriteLine(a);
+
+            a /= 5;
+            Console.WriteLine(a);
+
+            a %= 6;
+            Console.WriteLine(a);
+        }
+    }
+}
