@@ -1,0 +1,20 @@
+using System;
+
+namespace PrimeiroProjeto
+{
+    internal class Aula3
+    {
+        static void Main(String[] args)
+        {
+            //Calculo da formula de baskara
+
+            double a = 1.0, b = -3.0, c = -4.0;
+            double delta = Math.Pow(b, 2.0) - 4.0 * a * c;
+            double x1 = (-b + Math.Sqrt(delta)) / (2.0 * a);
+            double x2 = (-b - Math.Sqrt(delta)) / (2.0 * a);
+
+            Console.WriteLine("O resultado de X1 é: " + x1);
+            Console.WriteLine("O resultado de X2 é: " + x2);
+        }
+    }
+}
