@@ -1,0 +1,30 @@
+using System;
+
+namespace PrimeiroProjeto
+{
+    internal class Aula3
+    {
+        static void Main(String[] args)
+        {
+            Console.WriteLine(">I.I< VAMOS CALCULAR A DIFERENÇA!");
+
+            Console.WriteLine(">I.I< DIGITE O PRIMEIRO NÚMERO: ");
+            int n1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine(">I.I< DIGITE O SEGUNDO NÚMERO: ");
+            int n2 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine(">I.I< DIGITE O TERCEIRO NÚMERO: ");
+            int n3 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine(">I.I< DIGITE O QUARTO NÚMERO: ");
+            int n4 = int.Parse(Console.ReadLine());
+
+            int diferenca = (n1 * n2) - (n3 * n4);
+
+            Console.WriteLine($">I.I< A DIFERENÇA É DE: {diferenca}");
+
+
+        }
+    }
+}
