@@ -1,0 +1,25 @@
+using System;
+
+namespace PrimeiroProjeto
+{
+    internal class Aula3
+    {
+        static void Main(String[] args)
+        {
+            Console.WriteLine("= I . I = BEM VINDO A CALCULADORA DO VALOR DE UM RAIO DE UM CIRCULO! = I . I =");
+            
+            Console.WriteLine("Digite o valor do raio que deve ser calculado: ");
+            float raio = float.Parse(Console.ReadLine());
+
+            float pi = 3.14159f;
+
+            Console.WriteLine("= I . I = AGORA QUE TENHO O VALOR DO RAIO, HORA DE CALCULAR O PI = I . I =");
+
+            float area = pi * (raio * raio);
+
+            Console.WriteLine($"= I . I = A área é igual a: {area.ToString("F4")}");
+
+
+        }
+    }
+}
