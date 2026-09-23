@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("--- SISTEMA DE FOLHA DE PONTO ---");
+
+			Console.WriteLine("DIGITE SEU NÚMERO DE FUNCIONÁRIO: ");
+			int numero_funcionario = int.Parse(Console.ReadLine());
+
+			Console.WriteLine("DIGITE AS HORAS TRABALHADAS: ");
+			int horas = int.Parse(Console.ReadLine());
+			float valor = 5.50f;
+
+			float salario = horas * valor;
+
+			Console.WriteLine($"--- FUNCIONÁRIO NÚMERO: {numero_funcionario}");
+			Console.WriteLine($"SEU SALÁRIO DE ACORDO COM AS HORAS TRABALHADAS: {salario.ToString("F2")}");
+
+
+		}
+	}
+}
