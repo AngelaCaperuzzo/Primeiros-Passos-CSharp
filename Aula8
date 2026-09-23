@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("--- CAIXA MERCADINHO ---");
+
+			Console.WriteLine("Digite o código do produto: ");
+			int codigo_um = int.Parse(Console.ReadLine());
+			Console.WriteLine("Digite a quantidade de produtos: ");
+			int quantidade_um = int.Parse(Console.ReadLine());
+			float valor_um = 5.60f;
+
+			Console.WriteLine("Digite o código do produto: ");
+			int codigo_dois = int.Parse(Console.ReadLine());
+			Console.WriteLine("Digite a quantidade de produtos: ");
+			int quantidade_dois = int.Parse(Console.ReadLine());
+			float valor_dois = 10.30f;
+
+			float total_um = quantidade_um * valor_um;
+			float total_dois = quantidade_dois * valor_dois;
+			float pagar = total_um + total_dois;
+
+			Console.WriteLine($"--- VALOR A PAGAR: {pagar.ToString("F2")} ---");
+
+
+		}
+	}
+}
